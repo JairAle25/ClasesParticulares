@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+}
+:root{
+    --ColorPrincipal : #9a98a9;
+    --ColorSecundario : #1a1a21;
+    --ColorDetalles: #4e4c5b;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll{
+    scroll-margin-top:11.9ex;
+}
+a{
+    text-decoration: none;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo{
+    width: 12%;
+}
+.logo img{
+    width: 100%;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+   
+}
+.links a{
+    color: var(--ColorSecundario);
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.hero{
+    height: 90vh;
+    display: flex;
+    background-color:var(--ColorSecundario);
+}
+/*le doy propiedades al apartado del hero
+con mi nombre y informacion*/
+.hero .informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+/*Modificamos tamaño y color del H1*/
+.hero .informacion h1{
+    font-size:5rem;
+    color: var(--ColorDetalles);
+    position: relative;
+    animation-name: muestraNombre;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    text-align: center;
+}
+/*Ponemos otro color para mi nombre*/
+.hero .informacion span{
+    font-size: 5rem;
+    color: var(--ColorPrincipal);
+}
+/*la descripcion la le pongo color y tamaño*/
+.hero .informacion p{
+    color: var(--ColorPrincipal);
+    font-size: 2rem;
+    position: relative;
+    animation-name: muestraNombre;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes muestraNombre{
+    0% {
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+/*Le doy estilo y dimension al boton que nos puede contactar*/
+.hero .informacion a{
+    color: var(--ColorPrincipal);
+    border: 2px solid var(--ColorPrincipal);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: relative;
+    transition: all 0.5s ease;
+    animation: botonDeLado 3.5s ease;
+}
+/*Transicion del boton para darle mas detalle*/
+.hero .informacion a:hover{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+}
+@keyframes botonDeLado {
+    0%{
+        left: -200%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.infoClases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+.infoClases h1{
+    font-size: 3.3rem;
+    color: var(--ColorSecundario);
+    padding-top: 2rem;
+}
+.infoClases .info{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info h2{
+    color: var(--ColorDetalles);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.info p{
+    font-size: 1.1rem;
+}
+.info p i{
+    color: #35409e;
+    font-size: 1.4rem;
+}
+.info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 0.5rem;
+}
+.info ul li {
+    font-size: 1.1rem;
+    list-style-type: none;
+}
+.info a{
+    color: var(--ColorDetalles);
+}
+.reserva{
+    display: flex;
+    flex-direction: column;
+}
+.reserva h2{
+    font-size: 2.7rem;
+    text-align: center;
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    color:var(--ColorSecundario);
+}
+.reserva p{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+}
+.reserva p a{
+    color: var(--ColorDetalles);
+}
