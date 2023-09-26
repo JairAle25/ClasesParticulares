@@ -6,7 +6,7 @@
     font-family: 'Mooli', sans-serif;
 }
 :root{
-    --ColorPrincipal : #9a98a9;
+    --ColorPrincipal : #afadbb;
     --ColorSecundario : #1a1a21;
     --ColorDetalles: #4e4c5b;
 }
@@ -24,7 +24,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     background-color: white;
     position: sticky;
     top: 0;
@@ -32,7 +32,7 @@ a{
     z-index: 1;
 }
 .logo{
-    width: 12%;
+    width: 13%;
 }
 .logo img{
     width: 100%;
