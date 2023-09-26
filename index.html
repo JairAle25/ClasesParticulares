@@ -13,7 +13,7 @@
         <nav class="links">
             <a href="#info">Informacion</a>
             <a href="#reserva">Reserva tu clase</a>
-            <a href="">Pago</a>
+            <a href="#pago">Pago</a>
         </nav>
     </header>
     <main>
@@ -31,8 +31,8 @@
             <h1>Informacion</h1>
             <div class="info">
                 <h2>Como son las clases?</h2>
-                <p>Las clases son 100% online por la plataforma de Microsoft Teams <i class="bi bi-microsoft-teams"></i>, tambien son 100% personalizadas , lo que significa que la clase va a tratar de lo que necesites aprender en ese momento, ya sea ciclos , funciones , clases ,etc.</p>
-                <p>Doy clases Particulares de las siguientes materias de la Tecnicatura en Programacion de la UTN : </p>
+                <p class="texto">Las clases son 100% online por la plataforma de Microsoft Teams <i class="bi bi-microsoft-teams"></i>, tambien son 100% personalizadas , lo que significa que la clase va a tratar de lo que necesites aprender en ese momento, ya sea ciclos , funciones , clases ,etc.</p>
+                <p class="texto">Doy clases Particulares de las siguientes materias de la Tecnicatura en Programacion de la UTN : </p>
                 <ul>
                     <li>Programacion 1</li>
                     <li>Programacion 2</li>
@@ -43,24 +43,26 @@
             </div>
             <div class="info">
                 <h2>Cuanto cuesta la hora?</h2>
-                <p>El precio por una hora de clases es de 1600$ (act 22/09/2023)</p>
+                <p class="texto">El precio por una hora de clases es de 1600$ (act 22/09/2023)</p>
             </div>
             <div class="info">
                 <h2>Que dias y en que horarios son las clases?</h2>
-                <p>Toda esa informacion sobre que dias y horarios puedo, las vas a encotrar en la seccion <a href="#reserva">Reserva tu clase</a> ahi vas a poder ver toda la informacion y reservar una clase</p>
+                <p class="texto">Toda esa informacion sobre que dias y horarios puedo, las vas a encotrar en la seccion <a href="#reserva">Reserva tu clase</a> ahi vas a poder ver toda la informacion y reservar una clase</p>
             </div>
         </section>
 
         <!--SECTION RESERVA-->
         <section class="reserva">
             <h2>Reserva tu clase</h2>
-            <p>Elegi el dia y el horario que mas te convenga <br> (Si no figura un dia ni una hora en la que podes , escribime por <a href="">whatsapp</a> y podemos llegar a acordar un dia y horario que puedas)</p>
+            <p class="texto">Elegi el dia y el horario que mas te convenga <br> (Si no figura un dia ni una hora en la que podes , escribime por <a href="https://api.whatsapp.com/send?phone=541178860301" class="whatsapp" target="_blank">whatsapp <i class="bi bi-whatsapp"></i></a> y podemos llegar a acordar un dia y horario que puedas)</p>
             
             <div id="reserva" class="calendly-inline-widget scroll caledario" data-url="https://calendly.com/jair-clases-particulares" style="min-width:320px;height:700px;"></div>
         </section>
         
-        <section>
-            
+        <section class="pago scroll" id="pago">
+            <h2>Pagar</h2>
+            <p class="texto">Antes del horario de la clase , se necesita que el pago ya este realizado , como hacerlo?, haciendo click en el boton se te copiara mi alias automaticamente y me podras transferir el importe de la clase ( por favor enviar el comprobante por <a href="https://api.whatsapp.com/send?phone=541178860301" class="whatsapp" target="_blank">whatsapp <i class="bi bi-whatsapp"></i></a> )</p>
+            <button class="cvu">Copiar CVU</button>
         </section>
     </main>
     <footer>
@@ -68,7 +70,7 @@
     </footer>
 
 
-
+    
 
 
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>

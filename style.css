@@ -149,9 +149,6 @@ con mi nombre y informacion*/
     font-size: 2.5rem;
     padding: 1rem 0;
 }
-.info p{
-    font-size: 1.1rem;
-}
 .info p i{
     color: #35409e;
     font-size: 1.4rem;
@@ -180,11 +177,59 @@ con mi nombre y informacion*/
     padding-bottom: 1rem;
     color:var(--ColorSecundario);
 }
-.reserva p{
+.texto{
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     padding-bottom: 1.2rem;
 }
-.reserva p a{
+.whatsapp{
     color: var(--ColorDetalles);
+    transition: all 0.3s;
 }
+.whatsapp:hover{
+    color: rgb(16, 156, 16);
+}
+.whatsapp i{
+    color: rgb(16, 156, 16);
+    font-size: 1.3rem;
+}
+.pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+.pago h2{
+    padding-top: 1.5rem;
+    font-size: 2.7rem;
+    color: var(--ColorSecundario);
+    padding-bottom: 1.4rem;
+}
+.cvu {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 5px #495057;
+    font-size: 1rem;
+  }
+  .cvu:hover {
+    box-shadow: 0 3px #495057;
+    top: 1px;
+  }
+  .cvu:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+  }
