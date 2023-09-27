@@ -19,270 +19,418 @@ html{
 a{
     text-decoration: none;
 }
-
-.cabecera{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1.2rem 0;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.logo{
-    width: 13%;
-}
-.logo img{
-    width: 100%;
-}
-.links{
-    display: flex;
-    gap: 2rem;
-    font-size: 1.2rem;
-   
-}
-.links a{
-    color: var(--ColorSecundario);
-}
-.links a:hover{
-    text-decoration: underline;
-}
-.hero{
-    height: 90vh;
-    display: flex;
-    background-color:var(--ColorSecundario);
-    background-image: url(img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/*le doy propiedades al apartado del hero
-con mi nombre y informacion*/
-.hero .informacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 80%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-}
-/*Modificamos tamaño y color del H1*/
-.hero .informacion h1{
-    font-size:5rem;
-    color: var(--ColorPrincipal);
-    position: relative;
-    animation-name: muestraNombre;
-    animation-duration: 1.1s;
-    animation-timing-function: ease-in-out;
-    text-align: center;
-}
-
-/*la descripcion la le pongo color y tamaño*/
-.hero .informacion p{
-    color: var(--ColorPrincipal);
-    font-size: 2rem;
-    position: relative;
-    animation-name: muestraNombre;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
-}
-@keyframes muestraNombre{
-    0% {
-        bottom: 100%;
-    }
-    100%{
-        bottom: 0%;
-    }
-}
-/*Le doy estilo y dimension al boton que nos puede contactar*/
-.hero .informacion a{
-    background-color: var(--ColorPrincipal);
-    color: var(--ColorSecundario);
-    border: 2px solid var(--ColorPrincipal);
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-top: 2rem;
-    cursor: pointer;
-    font-size: 1.3rem;
-    position: relative;
-    transition: all 0.5s ease;
-    animation: botonDeLado 3.5s ease;
-}
-/*Transicion del boton para darle mas detalle*/
-.hero .informacion a:hover{
-    color: var(--ColorPrincipal);
-    background-color: transparent;
-    border: 2px solid var(--ColorPrincipal);
-}
-@keyframes botonDeLado {
-    0%{
-        left: -200%;
-    }
-    100%{
+@media(max-width:7000px){
+    .cabecera{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.2rem 0;
+        background-color: white;
+        position: sticky;
+        top: 0;
         left: 0;
+        z-index: 1;
+    }
+    .logo{
+        width: 11%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .links{
+        display: flex;
+        gap: 2rem;
+        font-size: 1.2rem;
+       
+    }
+    .links a{
+        color: var(--ColorSecundario);
+    }
+    .links a:hover{
+        text-decoration: underline;
+    }
+    .hero{
+        height: 90vh;
+        display: flex;
+        background-color:var(--ColorSecundario);
+        background-image: url(img/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*le doy propiedades al apartado del hero
+    con mi nombre y informacion*/
+    .hero .informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 80%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    /*Modificamos tamaño y color del H1*/
+    .hero .informacion h1{
+        font-size:5rem;
+        color: var(--ColorPrincipal);
+        position: relative;
+        animation-name: muestraNombre;
+        animation-duration: 1.1s;
+        animation-timing-function: ease-in-out;
+        text-align: center;
+    }
+    
+    /*la descripcion la le pongo color y tamaño*/
+    .hero .informacion p{
+        color: var(--ColorPrincipal);
+        font-size: 2rem;
+        position: relative;
+        animation-name: muestraNombre;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes muestraNombre{
+        0% {
+            bottom: 100%;
+        }
+        100%{
+            bottom: 0%;
+        }
+    }
+    /*Le doy estilo y dimension al boton que nos puede contactar*/
+    .hero .informacion a{
+        background-color: var(--ColorPrincipal);
+        color: var(--ColorSecundario);
+        border: 2px solid var(--ColorPrincipal);
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-size: 1.3rem;
+        position: relative;
+        transition: all 0.5s ease;
+        animation: botonDeLado 3.5s ease;
+    }
+    /*Transicion del boton para darle mas detalle*/
+    .hero .informacion a:hover{
+        color: var(--ColorPrincipal);
+        background-color: transparent;
+        border: 2px solid var(--ColorPrincipal);
+    }
+    @keyframes botonDeLado {
+        0%{
+            left: -200%;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .infoClases{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    .infoClases h1{
+        font-size: 3.3rem;
+        color: var(--ColorSecundario);
+        padding-top: 2rem;
+    }
+    .infoClases .info{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info h2{
+        color: var(--ColorDetalles);
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+    .info p .teams{
+        color: #35409e;
+        font-size: 1.4rem;
+    }
+    .info p .pesos{
+        color: rgb(7, 88, 7);
+        font-size: 1.4rem;
+    }
+    .info ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding-top: 0.5rem;
+    }
+    .info ul li {
+        font-size: 1.1rem;
+        list-style-type: none;
+    }
+    .info a{
+        color: var(--ColorDetalles);
+        transition: all 0.4s ease;
+    }
+    .info a:hover{
+        text-decoration: underline;
+    }
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.3rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .reserva h1{
+        font-size: 2.7rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        color:var(--ColorSecundario);
+    }
+    .texto{
+        text-align: center;
+        font-size: 1.15rem;
+        padding-bottom: 1.2rem;
+        line-height: 2rem;
+    }
+    .whatsapp{
+        color: var(--ColorDetalles);
+        transition: all 0.3s;
+    }
+    .whatsapp:hover{
+        color: rgb(16, 156, 16);
+    }
+    .whatsapp i{
+        color: rgb(16, 156, 16);
+        font-size: 1.3rem;
+    }
+    .pago{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+    }
+    .pago h2{
+        padding-top: 1.5rem;
+        font-size: 2.7rem;
+        color: var(--ColorSecundario);
+        padding-bottom: 1.4rem;
+    }
+    .cvu {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #6c757d;
+        box-shadow: 0 5px #495057;
+        font-size: 1rem;
+      }
+      .cvu:hover {
+        box-shadow: 0 3px #495057;
+        top: 1px;
+      }
+      .cvu:active {
+        box-shadow: 0 0 #495057;
+        top: 5px;
+      }
+      .redes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        background-color: var(--ColorSecundario);
+        padding: 1.3rem 0;
+      }
+      .redes i{
+        font-size: 2rem;
+      }
+      .redes .whatsappRedes{
+        color: rgb(21, 179, 21);
+        transition: all 0.3s;
+      }
+      .redes .whatsappRedes:hover{
+        color: rgb(16, 112, 16);
+      }
+      .redes .linkedin{
+        color: #257bd2;
+        transition: all 0.3s;
+      }
+      .redes .linkedin:hover{
+        color: #11508f;
+      }
+      .redes p{
+        color: var(--ColorPrincipal);
+        font-size: 1.4rem;
+      }
+      .creditos{
+        background-color: var(--ColorSecundario);
+        padding: 0.7rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .creditos p{
+        text-align: center;
+        font-size: 1rem;
+        color: var(--ColorPrincipal);
+      }
+      .creditos span{
+        font-size: 1.32rem;
+      }
+      .creditos a{
+        color: var(--ColorPrincipal);
+        transition: all 0.3s;
+      }
+      .creditos a:hover{
+        color: #126bc4;
+        text-decoration: underline;
+      }
+      .listResponsive{
+        display: none;
+      }
+} 
+
+@media(max-width:1024px){
+    .cabecera{
+        padding: 1rem 0;
+    }
+    .logo{
+        width: 22%;
+    }
+    .links{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0,0.9);
+        height: 100vh;
+        width: 55%;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        z-index: -1;
+        opacity: 0;
+        gap: 2.8rem;
+        pointer-events: none;
+        transition: all 0.5 ease;
+    }
+    .listResponsive{
+        display: inline-block;
+        color: var(--ColorSecundario);
+        font-size: 2.3rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .rotarLista{
+        transform: rotate(90deg);
+        color: var(--ColorPrincipal);
+    }
+    .mostrarLista{
+        transition: all 0.5s;
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .links a{
+        color: var(--ColorPrincipal);
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width:480px){
+    .logo{
+        width: 30%;
+    }
+    .links{
+        width: 100%;
+        gap: 2.8rem;
+    }
+    .listResponsive{
+        font-size: 1.7rem;
+    }
+    .links a{
+        color: var(--ColorPrincipal);
+        font-size: 1.5rem;
+    }
+    .hero .informacion{
+        flex-basis: 90%;
+    }
+    .hero .informacion h1{
+        font-size:3.5rem;
+    }
+    .hero .informacion p{
+        padding-top: 0.5rem;
+        font-size: 1.6rem;
+    }
+    /*Le doy estilo y dimension al boton que nos puede contactar*/
+    .hero .informacion a{
+        font-size: 1.2rem;
+    }
+    .infoClases h1{
+        font-size: 2.9rem;
+    }
+    .infoClases .info{
+        width: 90%;
+    }
+    .info h2{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1.6rem;
+    }
+    .info p .teams{
+        font-size: 1.3rem;
+    }
+    .info p .pesos{
+        font-size: 1.3rem;
+    }
+    .info ul{
+        padding-top: 0.2rem;
+    }
+    .info ul li {
+        font-size: 1rem;
+    }
+    .texto{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .reserva{
+        width: 90%;
+    }
+    .reserva h1{
+        font-size: 2.5rem;
+    }
+    .whatsapp i{
+        font-size: 1rem;
+    }
+    /*................................*/
+    .pago{
+        width: 90%;
+    }
+    .redes i{
+    font-size: 1.5rem;
+    }
+    .redes p{
+    font-size: 1.2rem;
+    }
+    .creditos p{
+    font-size: 0.8rem;
+    }
+    .creditos span{
+    font-size: 1.2rem;
     }
 }
-.infoClases{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 4rem;
-}
-.infoClases h1{
-    font-size: 3.3rem;
-    color: var(--ColorSecundario);
-    padding-top: 2rem;
-}
-.infoClases .info{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.info h2{
-    color: var(--ColorDetalles);
-    font-size: 2.5rem;
-    padding: 1rem 0;
-}
-.info p i{
-    color: #35409e;
-    font-size: 1.4rem;
-}
-.info ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    padding-top: 0.5rem;
-}
-.info ul li {
-    font-size: 1.1rem;
-    list-style-type: none;
-}
-.info a{
-    color: var(--ColorDetalles);
-}
-.reserva{
-    display: flex;
-    flex-direction: column;
-    padding-top: 1.3rem;
-}
-.reserva h2{
-    font-size: 2.7rem;
-    text-align: center;
-    padding-bottom: 1rem;
-    color:var(--ColorSecundario);
-}
-.texto{
-    text-align: center;
-    font-size: 1.15rem;
-    padding-bottom: 1.2rem;
-}
-.whatsapp{
-    color: var(--ColorDetalles);
-    transition: all 0.3s;
-}
-.whatsapp:hover{
-    color: rgb(16, 156, 16);
-}
-.whatsapp i{
-    color: rgb(16, 156, 16);
-    font-size: 1.3rem;
-}
-.pago{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 4rem;
-}
-.pago h2{
-    padding-top: 1.5rem;
-    font-size: 2.7rem;
-    color: var(--ColorSecundario);
-    padding-bottom: 1.4rem;
-}
-.cvu {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: #6c757d;
-    box-shadow: 0 5px #495057;
-    font-size: 1rem;
-  }
-  .cvu:hover {
-    box-shadow: 0 3px #495057;
-    top: 1px;
-  }
-  .cvu:active {
-    box-shadow: 0 0 #495057;
-    top: 5px;
-  }
-  .redes{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    background-color: var(--ColorSecundario);
-    padding: 1.3rem 0;
-  }
-  .redes i{
-    font-size: 2rem;
-  }
-  .redes .whatsappRedes{
-    color: rgb(21, 179, 21);
-    transition: all 0.3s;
-  }
-  .redes .whatsappRedes:hover{
-    color: rgb(16, 112, 16);
-  }
-  .redes .linkedin{
-    color: #257bd2;
-    transition: all 0.3s;
-  }
-  .redes .linkedin:hover{
-    color: #11508f;
-  }
-  .redes p{
-    color: var(--ColorPrincipal);
-    font-size: 1.4rem;
-  }
-  .creditos{
-    background-color: var(--ColorSecundario);
-    padding: 0.7rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .creditos p{
-    text-align: center;
-    font-size: 1rem;
-    color: var(--ColorPrincipal);
-  }
-  .creditos span{
-    font-size: 1.32rem;
-  }
-  .creditos a{
-    color: var(--ColorPrincipal);
-    transition: all 0.3s;
-  }
-  .creditos a:hover{
-    color: #126bc4;
-    text-decoration: underline;
-  }

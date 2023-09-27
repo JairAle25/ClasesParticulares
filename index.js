@@ -22,3 +22,11 @@ botonCvu.addEventListener('click', function(event) {
       console.error(err);
     });
   });
+
+const list = document.getElementById('list');
+const links = document.getElementById('links');
+
+list.addEventListener('click',()=>{
+  links.classList.toggle('mostrarLista');
+  list.classList.toggle('rotarLista');
+})
