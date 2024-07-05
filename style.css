@@ -314,6 +314,11 @@ a{
         font-size: 1.15rem;
         text-align: center;
       }
+      .btnRefresh{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 2rem;
+      }
 } 
 
 @media(max-width:1024px){

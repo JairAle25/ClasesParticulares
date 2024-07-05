@@ -30,3 +30,9 @@ list.addEventListener('click',()=>{
   links.classList.toggle('mostrarLista');
   list.classList.toggle('rotarLista');
 })
+
+const btnOtraClase = document.getElementById('btnRefresh');
+
+btnOtraClase.addEventListener('click',()=>{
+  location.reload();
+})
