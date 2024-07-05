@@ -300,6 +300,20 @@ a{
       .listResponsive{
         display: none;
       }
+      .advertencia{
+        color: rgb(235, 235, 0);
+      }
+      .listaAdvertencias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.15rem;
+        text-align: center;
+      }
 } 
 
 @media(max-width:1024px){
